@@ -1,0 +1,30 @@
+{
+  "name": "zero-mile",
+  "private": true,
+  "version": "1.2.0",
+  "description": "ZERO MILE — 3D arcade driving action roguelite (browser)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "package": "node scripts/package.mjs",
+    "idos:config": "node scripts/idos-config.ts dev && node scripts/idos-config.ts live",
+    "idos:verify": "node scripts/idos-verify.ts",
+    "trailer": "node scripts/trailer.mjs"
+  },
+  "dependencies": {
+    "@idosgames/core": "^0.21.2",
+    "@idosgames/wallet": "^0.6.2",
+    "@wallet-standard/app": "^1.1.0",
+    "@wallet-standard/base": "^1.1.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0",
+    "playwright-core": "^1.49.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.3"
+  }
+}
